@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+    <div class="row">
+			
+			<!-- Article main content -->
+			<article class="col-xs-12 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">Connexion</h1>
+				</header>
+				
+				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h3 class="thin text-center">Se connecter</h3>
+							<p class="text-center text-muted">Vous n'êtes pas encore inscrit? <a href="{% url 'signup' %}">Inscrivez-vous</a> dès maintenant! </p>
+							<hr>
+							
+                                <form method="post" action="{% url 'login' %}">
+                                        {% csrf_token %}
+                                        {{ form.as_p }}
+                                    <hr>
+
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <b><a href="">Mot de passe oublié?</a></b>
+                                        </div>
+                                        <div class="col-lg-4 text-right">
+										    <button class="btn btn-action" type="submit">connexion</button>
+                                		</div>
+									</div>
+                                </form>
+						</div>
+					</div>
+
+				</div>
+				
+			</article>
+			<!-- /Article -->
+
+		</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- en attendant -->
+
+<div class="row">
+            
+    <!-- Article main content -->
+    <article class="col-xs-12 maincontent">
+        <header class="page-header">
+            <h1 class="page-title">Indices</h1>
+        </header>
+        
+        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3 class="thin text-center">Nouvel indice</h3>
+                    <!-- <p class="text-center text-muted">Vous n'êtes pas encore inscrit? <a href="{% url 'signup' %}">Inscrivez-vous</a> dès maintenant!</p>--> 
+                    <hr>
+                    
+                        <form method="post" action="{% url 'list_clues' %}">
+                                {% csrf_token %}
+                                {{ form.as_p }}
+                            <hr>
+
+                            <div class="row">
+                                <div class="col-lg-4 text-right">
+                                    <button class="btn btn-action" type="submit">Inspecter</button>
+                                </div>
+                            </div>
+                        </form>
+                </div>
+            </div>
+
+        </div>
+        
+    </article>
+    <!-- /Article -->
+
+</div>
+
+<div class="row">
+            
+        
+        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3 class="thin text-center">Vos Indices</h3>
+                    <hr>
+                    
+                        <ul>
+                            {% for clue in clues %}
+                            <li><a href="{% url 'content_clue' clue.id %}">{{clue.clue.title}}</a></li><!-- mettre un lien pour aller vers l'indice conplet -->
+                            {% empty %}
+                            <li>Pas encore d'indice.</li>
+                            {% endfor %}
+                        </ul>
+                        <hr>
+                </div>
+            </div>
+
+        </div>
+        
+    </article>
+    <!-- /Article -->
+
+</div>
+
+{% endblock %}
