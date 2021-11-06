@@ -24,7 +24,7 @@
 				
 
                 {% if whole_clue.clue.url_img_optionnel != 'rien' %}
-                    <img src="../../static/mainapp/images/{{whole_clue.clue.url_img_optionnel}}.jpg" alt="{{url_content}}" class="img-fluid center-block rounded mx-auto d-block" id='rage'><!-- url de l'image du contenu, je devrais passer par static mais ca ne marche pas-->
+                    <img src="../../static/mainapp/images/{{whole_clue.clue.url_img_optionnel}}.jpg" alt="{{url_content}}" class="arrondie img-fluid center-block rounded mx-auto d-block" id='rage'><!-- url de l'image du contenu, je devrais passer par static mais ca ne marche pas-->
                 {% endif %}
                 <!-- faire un retour à la liste très simplement -->
                 <b><a href="{% url 'list_clues' %}">Retour à la liste</a></b>
