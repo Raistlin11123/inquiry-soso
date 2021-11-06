@@ -9,11 +9,11 @@
                     <h1 class="intro-text text-center" id='title-clue'><strong>{{whole_clue.clue.title}}</strong></h1><!-- titre de l'indice affiché -->
                 <hr>
                 
-                <!--formulaire avec question pour vérifier qu'ils sont passé par un bon lieu --> 
+                <!--formulaire avec question pour vérifier qu'ils sont passé par un bon lieu --idée modifié --> 
                 
                 
                 
-                <!-- if si il n'y a qu'une vidép=o -->
+                <!-- if si il n'y a qu'une vidép=o -- l'idée original était de pouvoir alterner image et texte mais c'était ignoble en base de donnée-->
                 {% if whole_clue.clue.paragraph1 %}
                 <p class="indent_text">{{ whole_clue.clue.paragraph1|linebreaks }}</p> <!--linebreaks pour garder les paragraphes-->
                 {% endif %}
@@ -24,7 +24,7 @@
 				
 
                 {% if whole_clue.clue.url_img_optionnel != 'rien' %}
-                    <img src="../../static/investigation1/img/{{whole_clue.clue.url_img_optionnel}}.jpg" alt="{{url_content}}" class="rounded mx-auto d-block" id='rage'><!-- url de l'image du contenu, je devrais passer par static mais ca ne marche pas-->
+                    <img src="../../static/mainapp/images/{{whole_clue.clue.url_img_optionnel}}.jpg" alt="{{url_content}}" class="rounded mx-auto d-block" id='rage'><!-- url de l'image du contenu, je devrais passer par static mais ca ne marche pas-->
                 {% endif %}
                 <!-- faire un retour à la liste très simplement -->
                 <b><a href="{% url 'list_clues' %}">Retour à la liste</a></b>
