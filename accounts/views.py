@@ -24,7 +24,7 @@ def login_view(request):
             if user:  # If the object returned is not None
                 messages.warning(request, "Bienvenue dans la brigade criminelle de lien. Veuillez prendre connaissance de votre mission.")
                 login(request, user)  # We log the user in
-                return redirect('historic')
+                return redirect('index')
              
             else:
                 messages.error(request, 'Identifiant ou mot de passe incorrect')
@@ -74,7 +74,7 @@ def signup_view(request):
                 
                 login(request, user)
                 messages.warning(request, "Bienvenue dans la brigade criminelle de lien. Veuillez prendre connaissance de votre mission.")
-                return redirect('historic')
+                return redirect('index')
             #si les 2 mdp sont différents
             else:
                 messages.error(request, 'Le mot de passe de confirmation est différent du mot de passe')
