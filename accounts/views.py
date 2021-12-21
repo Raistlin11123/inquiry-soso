@@ -22,7 +22,7 @@ def login_view(request):
                 
             user = authenticate(username=username, password=password)  # We check wither the data are correct
             if user:  # If the object returned is not None
-                messages.warning(request, "Bienvenue dans la brigade criminelle de lien. Veuillez prendre connaissance de votre mission.")
+                messages.success(request, "Bienvenue dans la brigade criminelle de lyon. Veuillez prendre connaissance de votre mission.")
                 login(request, user)  # We log the user in
                 return redirect('index')
              
@@ -73,7 +73,7 @@ def signup_view(request):
                 user = authenticate(username=username, password=password)
                 
                 login(request, user)
-                messages.warning(request, "Bienvenue dans la brigade criminelle de lien. Veuillez prendre connaissance de votre mission.")
+                messages.success(request, "Bienvenue dans la brigade criminelle de Lyon. Veuillez prendre connaissance de votre mission.")
                 return redirect('index')
             #si les 2 mdp sont différents
             else:
