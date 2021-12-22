@@ -17,11 +17,6 @@
 	#head .lead { font-size: 34px; }
 }
 
-#logo_img {
-	position:fixed;
-	z-index:1;
-}
-
 /*sans bordure (conetnt clue photo)*/
 .arrondie {
 -moz-border-radius:7px;
@@ -146,3 +141,6 @@ p {
 	text-indent: 0px;
 }
 
+#logo_ {
+	font-family:"Open sans", Helvetica, Arial;
+}
