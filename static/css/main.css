@@ -17,6 +17,10 @@
 	#head .lead { font-size: 34px; }
 }
 
+#logo_img {
+	position:fixed;
+	z-index:1;
+}
 
 /*sans bordure (conetnt clue photo)*/
 .arrondie {
@@ -141,3 +145,4 @@ p {
 .menu_footer {
 	text-indent: 0px;
 }
+

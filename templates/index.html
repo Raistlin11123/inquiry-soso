@@ -25,13 +25,14 @@
 </head>
 
 <body class="home">
+	<a id="logo_img" class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'images/mini_logo.gif' %}" alt="logo"></a>
 	<!-- Fixed navbar -->
 	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
 		<div class="container">
 			<div class="navbar-header">
-				<!-- Button for smallest screens -->
+				<!-- Button for smallest screens le menu hamburger -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-				<img src="{% static 'images/mini_logo.gif' %}" alt="logo">
+				
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
