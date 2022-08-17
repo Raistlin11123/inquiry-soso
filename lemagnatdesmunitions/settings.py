@@ -24,7 +24,7 @@ SECRET_KEY = 'uc(7q3_dt9$uzhsom3a1+cvgb^&p!loty$2qy*^dqc07g409^x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['soso-inquiry.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['soso-inquiry.herokuapp.com', 'philippeleboss.herokuapp.com', 'visites-passe-muraille.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
