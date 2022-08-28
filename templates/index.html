@@ -35,25 +35,25 @@
 			<div class="navbar-header">
 				<!-- Button for smallest screens le menu hamburger -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-				<h6 class="navbar-brand2">Enquêtes grain de sel</h6><!-- <img src="{% static 'images/mini_logo.gif' %}" alt="logo">-->
+				<h6 class="navbar-brand2">PASSE MURAILLE</h6><!-- <img src="{% static 'images/mini_logo.gif' %}" alt="logo">-->
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
 					<li class=""><a href="{% url 'index' %}">Accueil</a></li>
-					<!-- <li class="dropdown">
+					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Informations<b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="{% url 'historic' %}">Historique</a></li>
 							<li class=""><a href="{% url 'map' %}">Carte</a></li>
 							<li><a href="#">...</a></li>
 						</ul>
-					</li>-->
+					</li>
 					<li><a href="{% url 'list_clues' %}">Indices</a></li>
                     
                     {% if user.is_authenticated %}
                     <li><a class="btn" href="{% url 'logout' %}">DECONNEXION</a></li>
 	                {% else %}
-                    <li><a class="btn" href="{% url 'login' %}">CONNEXION / INSCRIPTION</a></li>
+                    <li><a class="btn" href="{% url 'login' %}">CONNEXION</a></li>
                     {% endif %}				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -96,14 +96,8 @@
 			
 			<h3 class="text-center thin">Janvier 1858.</h3>
 
-			<p class="thin">Dans la capitale, les parisiens se remettent de l’attentat d’Orsini contre Sa Majesté l’Empereur Napoléon III. A Londres, on se prépare au mariage de la princesse royale Victoria d’Angleterre avec son cousin le prince héritier Fréderic de Prusse. Dans un mois, Bernadette Soubirous fera la rencontre de l’Immaculée Conception et attirera des milliers de pèlerins dans le Sud-Ouest.</p>
 
-<p class="thin">Mais aujourd’hui, nous sommes bien loin de Paris, Londres ou Lourdes. Nous sommes à Lyon.</p>
-
-<p class="thin">Claude Marius Vaisse est préfet du Rhône et maire de Lyon. La révolte des canuts est encore fraiche dans les mémoires et les autorités ont peur que de nouvelles altercations aient lieu. De larges rues sont construites afin de faciliter l’intervention de l’armée.</p>
-
-<p class="thin">L’ambiance est électrique, il suffirait de peu et… le cadavre d’un ancien canut a été retrouvé ce matin au bord du Rhône. Suicide ? Accident ? Meurtre ? A vous de reconstruire l’affaire avant que des personnes malintentionnées ne détournent l’évènement pour relancer la révolte.</p>
-
+			<p class="thin">L’ambiance est électrique, il suffirait de peu et… le cadavre d’un ancien canut a été retrouvé ce matin au bord du Rhône. Suicide ? Accident ? Meurtre ? A vous de reconstruire l’affaire avant que des personnes malintentionnées ne détournent l’évènement pour relancer la révolte.</p>
 
 			<!--
 			<div class="row">
