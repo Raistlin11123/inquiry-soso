@@ -7,7 +7,7 @@
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 	
-	<title>Enquêtes grain de sel</title>
+	<title>Visite passe muraille</title>
 	<link rel="shortcut icon" href="{% static 'images/gt_favicon.png' %}">
 	
     <link rel="stylesheet" media="screen" href="{% static 'css/font-open-sans.css' %}">	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
@@ -21,6 +21,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 	<script src="assets/js/html5shiv.js"></script>
@@ -35,19 +37,19 @@
 			<div class="navbar-header">
 				<!-- Button for smallest screens le menu hamburger -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-				<h6 class="navbar-brand2">Enquêtes grain de sel</h6> <!--<img src="{% static 'images/mini_logo.gif' %}" alt="logo">-->
+				<h6 class="navbar-brand2">PASSE MURAILLE</h6><!-- <img src="{% static 'images/mini_logo.gif' %}" alt="logo">-->
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
 					<li class=""><a href="{% url 'index' %}">Accueil</a></li>
-					<li class="dropdown">
+					<!--<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Informations<b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="{% url 'historic' %}">Historique</a></li>
 							<li class=""><a href="{% url 'map' %}">Carte</a></li>
 							<li><a href="#">...</a></li>
 						</ul>
-					</li>
+					</li> -->
 					<li><a href="{% url 'list_clues' %}">Indices</a></li>
                     
                     {% if user.is_authenticated %}
@@ -96,14 +98,8 @@
 			
 			<h3 class="text-center thin">Janvier 1858.</h3>
 
-			<p class="thin">Dans la capitale, les parisiens se remettent de l’attentat d’Orsini contre Sa Majesté l’Empereur Napoléon III. A Londres, on se prépare au mariage de la princesse royale Victoria d’Angleterre avec son cousin le prince héritier Fréderic de Prusse. Dans un mois, Bernadette Soubirous fera la rencontre de l’Immaculée Conception et attirera des milliers de pèlerins dans le Sud-Ouest.</p>
 
-<p class="thin">Mais aujourd’hui, nous sommes bien loin de Paris, Londres ou Lourdes. Nous sommes à Lyon.</p>
-
-<p class="thin">Claude Marius Vaisse est préfet du Rhône et maire de Lyon. La révolte des canuts est encore fraiche dans les mémoires et les autorités ont peur que de nouvelles altercations aient lieu. De larges rues sont construites afin de faciliter l’intervention de l’armée.</p>
-
-<p class="thin">L’ambiance est électrique, il suffirait de peu et… le cadavre d’un ancien canut a été retrouvé ce matin au bord du Rhône. Suicide ? Accident ? Meurtre ? A vous de reconstruire l’affaire avant que des personnes malintentionnées ne détournent l’évènement pour relancer la révolte.</p>
-
+			<p class="thin">MISSION 1 : Le cadavre d’un ancien canut a été retrouvé ce matin au bord du Rhône. Suicide ? Accident ? Meurtre ? A vous de reconstruire l’affaire avant que des personnes malintentionnées ne détournent l’évènement pour relancer la révolte.</p>
 
 			<!--
 			<div class="row">
@@ -250,8 +246,8 @@
 							<p class="simplenav menu_footer">
 								<a href="{% url 'index' %}">Accueil</a> | 
 								<a href="{% url 'historic' %}">Historique</a> |
-								<a href="{% url 'map' %}">Carte</a> |
-								<a href="{% url 'list_clues' %}">Indices</a> |
+								<!--<a href="{% url 'map' %}">Carte</a> |
+								<a href="{% url 'list_clues' %}">Indices</a> |-->
 								<b><a href="{% url 'login' %}">Connexion</a></b>
                                 
 							</p>
