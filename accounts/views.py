@@ -41,9 +41,9 @@ def signup_view(request):
             username = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password')
             password_confirmation = form.cleaned_data.get('password_confirmation')
-            email = form.cleaned_data.get('email')
-            first_name = form.cleaned_data.get('first_name')
-            last_name = form.cleaned_data.get('last_name')
+            #email = form.cleaned_data.get('email')
+            #first_name = form.cleaned_data.get('first_name')
+            #last_name = form.cleaned_data.get('last_name')
             
             #Le mot de passe doit faire au moins 8 caractères pour être haché par django
             if len(password) < 6:
@@ -65,9 +65,9 @@ def signup_view(request):
 
                 user.username = username
                 user.set_password(password)
-                user.email = email
-                user.first_name = first_name
-                user.last_name = last_name
+                #user.email = email
+                #user.first_name = first_name
+                #user.last_name = last_name
                 user.save()
                 
                 user = authenticate(username=username, password=password)
